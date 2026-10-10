@@ -22,7 +22,7 @@ The user decides taste by seeing, not by reading options. Build six live variant
 5. **Verify before handing over.** `node` syntax check, headless screenshot with a throwaway profile (`chromium --headless=new --user-data-dir=$(mktemp -d) --virtual-time-budget=… --screenshot=…`), look at it. Then `xdg-open` the lab URL right away, unasked, the moment it is done.
 6. **The user picks.** "Combine E and F" = add **G** as a new panel; never overwrite a variant.
    - **Zoom** ("zoom in on the pulsing", "6 more like D"): a new round page (`<thing>2.html`, `3`…). Every variant they did not pick is gone. **A = the pick as it stands**; B–F = five variations *inside* that direction (rhythm, intensity, shape, what answers it), not new directions. Earlier round pages stay on disk as a record.
-7. **Ship the pick.** Make it the default via the hook, bump the script `?v=` cache buster, keep the lab page as a record, commit locally (no push), one line in the session note: what was picked and why.
+7. **Ship the pick.** Make it the default via the hook, bump the script `?v=` cache buster, keep the lab page as a record, commit with what was picked and why in the message.
 
 ## Common mistakes
 | Mistake | Fix |
