@@ -2,6 +2,8 @@
 
 A [Claude Code](https://claude.com/claude-code) skill for picking design by seeing it. Say "lab this" and Claude builds six live variants of an animation, loader, shape or layout side by side on one local page. You flick through them and pick one, and the pick ships into the real code.
 
+![Six ways a Seal is born from the same input](lab.gif)
+
 ## Install
 
 ```sh
